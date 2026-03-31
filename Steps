@@ -1,0 +1,68 @@
+## Investigation Methodology (Step-by-Step) 
+
+## My Investigation Approach
+This investigation followed a structured SOC workflow:
+Identification → Analysis → Validation → Attribution → Conclusion
+
+## 1 Loaded and Reviewed PCAP File 
+- Opened the provided PCAP file in Wireshark 
+- Applied Basic filters to understand overall network traffic 
+- Identified active hosts within the 10.0.0.0/24 network 
+
+## 2 Identified Windows Hosts and User Activity 
+- Fileterd traffic for SMB and NetBIOS protocols 
+- Observed authentication and file-sharing behavior 
+- Extracted usernames from networ ktraffic 
+
+Findings: 
+- Alyssa Fitzgerald (initial target) 
+-Elmer O'Brien (infected system) 
+
+Ports Observed: 
+- TCP 445 (SMB) 
+- TCP 139 (NetBIOS) 
+
+## 3 Detected Suspicious Host Behavior 
+- Analyzed traffic patters across hosts 
+- Identified abnormal activity from host 10.0.0.167 
+Indicators: 
+- Unusual outbound connections 
+- File downloads from untrusted domains 
+- Signs of potential payload execution 
+This host was flasgged as potentially compromised 
+
+## 4 Analyzed Suspicious Network Traffic 
+- Inspeced packet details for malicious patterns 
+- Reviewed HTTP/HHTPS and SMB traffic streams 
+- Corrolated activity with known attack behaviors 
+Evidence suggested command-and-control (C2) communication 
+
+## 5 Extracted Malware Analysis (VirusTotal) 
+- Identified suspicious file transfer within traffic
+- Extracted file from PCAP for further anaylsis 
+
+## 6 Performed Malware Analysis (VirusTotal) 
+- Uploaded extracted files to VirusTotal 
+- Reviewed detection results across multiple vendors 
+Results: 
+- Malware Type: Trojan / Backdoor 
+- Detection Names: 
+- Trojan.Generic 
+- Backdoor.Win32 
+
+## 7 Determined Attack Vector
+- Corrolated traffic patterns and file behavior 
+- Identified likely infection source 
+Conclusion: 
+- Attack delivered via malicious email attachment 
+- Payload executed on host 10.0.0.267 
+
+## 8 Corrolated Findings and Confirmed Compromise 
+- Combined network analysis, user attribution, and malware results 
+Final Determination: 
+- Infected Host: 10.0.0.167 
+- Affected Users: 
+- Alyssa Fitzgerald 
+- Elmer O'Brien 
+- Malware Type: Trojan / Backdoor 
+- Behavior: C2 beaconing + payload execution 
