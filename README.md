@@ -69,13 +69,12 @@ Network traffic over ports 445 and 139 was analyzed to idetify user activity. Th
 - Screenshot 2: Suspicious network traffic from infected hosts (10.0.0.167)
 Packet analysis shows abnormal outbound connections and potential file transfer activity from the infected host, indicating compromise and possible malware communication.
 
+
 <img width="680" height="456" alt="Screenshot 2026-03-31 at 4 06 59 PM" src="https://github.com/user-attachments/assets/cf33fed0-b538-416e-b62a-9fcfe94a3ceb" />
 
-Screenshot 3 (VirusTotal results) 
-- Screenshot 3: VirusTotal analysis confirming Trojan malware classification
+(VirusTotal results) 
+VirusTotal analysis confirming Trojan malware classification
 The extracted file was analyzed using VirusTotal, where multiple security vendors flagged the file as a Trojan/Backdoor variant, confirming malicious intent and supporting the compromise findings.
-
-
 
 Screenshot 4 (Conclusion / evidence summary screen) 
 - Screenshot 4: Correlation of investigation findings indetifying attack vectors and infected host.
