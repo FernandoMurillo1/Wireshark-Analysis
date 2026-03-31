@@ -59,14 +59,16 @@ Findings
 ## Screenshots 
 <img width="519" height="274" alt="Screenshot 2026-03-31 at 4 00 38 PM" src="https://github.com/user-attachments/assets/faeff0a1-8511-4dee-9cd3-7b929b2161d0" />
 
-Screenshot 1 (Usernames + SMB traffic) 
-- Screenshot 1: SMB authentication traffic revealing associated user accounts
+<img width="438" height="252" alt="Screenshot 2026-03-31 at 4 15 32 PM" src="https://github.com/user-attachments/assets/7f483ed5-a3f5-4d65-b6b3-dd9b89b2d520" />
+
+Screenshot 1 and 2 (Usernames + SMB traffic) 
+- Screenshot 1 and 2: SMB authentication traffic revealing associated user accounts
 Network traffic over ports 445 and 139 was analyzed to idetify user activity. This helped attribute the affected systems to Alyssa Fitzgerald and Elmer O'Brien through observed authnetication and file-sharing behavior.
 
 <img width="594" height="379" alt="Screenshot 2026-03-31 at 4 04 10 PM" src="https://github.com/user-attachments/assets/e494735e-0dfc-4b02-9b00-18e770ab345a" />
 
- Screenshot 2 ( Wireshark packet view / suspicious traffic)
-- Screenshot 2: Suspicious network traffic from infected hosts (10.0.0.167)
+ Screenshot 3 ( Wireshark packet view / suspicious traffic)
+- Screenshot 3: Suspicious network traffic from infected hosts (10.0.0.167)
 Packet analysis shows abnormal outbound connections and potential file transfer activity from the infected host, indicating compromise and possible malware communication.
 
 
@@ -76,8 +78,8 @@ Packet analysis shows abnormal outbound connections and potential file transfer 
 VirusTotal analysis confirming Trojan malware classification
 The extracted file was analyzed using VirusTotal, where multiple security vendors flagged the file as a Trojan/Backdoor variant, confirming malicious intent and supporting the compromise findings.
 
-Screenshot 4 (Conclusion / evidence summary screen) 
-- Screenshot 4: Correlation of investigation findings indetifying attack vectors and infected host.
+Screenshot 4 and 5(Conclusion / evidence summary screen) 
+- Screenshot 4 and: Correlation of investigation findings indetifying attack vectors and infected host.
 Combined analysis confirms that host 10.0.0.167 was infected via a malicious email attachment, resulting in Trojan-based comromise and command-and-control (C2) activity. 
 
 ## Attack Timeline 
