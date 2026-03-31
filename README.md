@@ -96,5 +96,4 @@ Combined analysis confirms that host 10.0.0.167 was infected via a malicious ema
 - Improved ability to corrolate traffic with malware behavior 
 
 ## Steps 
-
-https://docs.google.com/document/d/19E7zlmnU5pXBIOjmRT2LkzYz-cDMC1QpilqKPOo65nU/edit
+- Full breadown of what my thought process was going through this project is going to be in the steps page!
